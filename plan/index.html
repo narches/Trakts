@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Tracker</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js" async defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List Tracker</h1>
+    <form id="task-form">
+      <input type="text" id="task" placeholder="Enter task" required>
+      <input type="text" id="location" placeholder="Enter location" required>
+      <input type="date" id="date" required>
+      <input type="time" id="time" required>
+      <button type="submit">Add Task</button>
+    </form>
+    <div id="task-list" class="task-list"></div>
+    <div id="map"></div>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
