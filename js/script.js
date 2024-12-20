@@ -73,19 +73,24 @@ function deleteTask(index) {
 
 // Handle form submission
 document.getElementById("task-form").addEventListener("submit", (e) => {
-  e.preventDefault();
+  e.preventDefault(); // Prevent default form submission behavior
+
   const task = document.getElementById("task").value;
   const location = document.getElementById("location").value;
   const date = document.getElementById("date").value;
   const time = document.getElementById("time").value;
 
-  const newTask = { task, location, date, time };
-  saveTask(newTask);
+  if (task && location && date && time) {
+    const newTask = { task, location, date, time };
+    saveTask(newTask);
 
-  document.getElementById("task").value = "";
-  document.getElementById("location").value = "";
-  document.getElementById("date").value = "";
-  document.getElementById("time").value = "";
+    document.getElementById("task").value = "";
+    document.getElementById("location").value = "";
+    document.getElementById("date").value = "";
+    document.getElementById("time").value = "";
+  } else {
+    alert("Please fill in all fields before submitting.");
+  }
 });
 
 // Load tasks and initialize map when the page loads
