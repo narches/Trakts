@@ -9,7 +9,15 @@ body {
     font: size 12px;
     margin: 1px;
 }
-
+forme{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  max-width: 60px;
+}
 
 
 .uzorr {
