@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    text-align: center;
+    font-family: Onest, Courier New, Good Vibes monospace, Arial, sans-serif;
+    font: size 12px;
+    margin: 1px;
+}
 
 
 
