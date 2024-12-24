@@ -27,7 +27,6 @@ function loadTasks() {
     const taskItem = document.createElement('li');
     taskItem.innerHTML = `
       <span><strong>${task.task}</strong> - ${task.location} on ${task.date} at ${task.time}</span>
-      <button onclick="editTask(${index})">Edit</button>
       <button onclick="deleteTask(${index})">Delete</button>
     `;
     taskList.appendChild(taskItem);
